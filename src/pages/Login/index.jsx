@@ -1,7 +1,8 @@
 import {Component} from "react";
+import './index.css'
 export default class Login extends Component{
     render() {
-        return (<div id='xiaogou'>
+        return (<div id="gou">
             我是login组件
         </div>)
     }
