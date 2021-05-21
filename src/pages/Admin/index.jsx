@@ -1,11 +1,10 @@
 import {Component} from 'react';
-import {Button} from 'antd'
+import './index.css'
 class Admin extends Component {
     render() {
         return (
             <div id='zhu'>
                 我是admin组件
-                <Button>我是button</Button>
             </div>
         );
     }
