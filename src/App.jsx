@@ -1,6 +1,6 @@
 import './App.css';
-import Admin from "./pages/Admin";
-import Login from "./pages/Login";
+import Admin from "./containers/Admin_container";
+import Login from "./containers/Login_container";
 import  {Component,Fragment} from 'react';
 import {Route,Switch} from 'react-router-dom';
 class App extends Component{
