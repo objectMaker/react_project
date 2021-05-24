@@ -5,7 +5,7 @@ export default function (preState=initState,action){
     let nowState;
     switch (type){
         case ASYNC_GIT_PERSON:{
-            nowState = preState;
+            nowState = preState.concat(data);
             return nowState;
         }
         default :{
