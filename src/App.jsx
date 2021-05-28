@@ -1,14 +1,15 @@
 import './App.css';
-import Admin from "./pages/Admin";
-import Login from "./pages/Login";
+import Admin from "./containers/Admin";
+import Login from "./containers/Login";
+import {connect} from "react-redux";
 import  {Component,Fragment} from 'react';
 import {Route,Switch} from 'react-router-dom';
 class App extends Component{
     render() {
         return (<Fragment>
             <Switch>
-                <Route path='/admin'>
-                    <Admin/>
+                <Route  path='/admin'>
+                    <Admin {...this.props}/>
                 </Route>
                 <Route path='/login'>
                     <Login/>
@@ -20,4 +21,4 @@ class App extends Component{
         </Fragment>)
     }
 }
-export default App;
+export default connect((state)=>({state}))(App)
